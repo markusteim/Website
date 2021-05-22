@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Markus Teimann">
+    <meta name="description" content="Web site for COM1008">
+    <title>Markus Teimann Website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../stylesheets/mobile.css">
+    <link rel="stylesheet" href="../stylesheets/smallphones.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" href="../stylesheets/mobilecanvas.css" media="screen and (min-width: 768px)"> <!--I needed another stylesheet to make the canvas work for all sizes-->
+    <link rel="stylesheet" href="../stylesheets/desktopstylesheet.css" media="screen and (min-width: 1700px)">
+    
+    
+</head>
+
+
+
+<body>
+    <header>
+        <div id="pageText">
+            Daily Markus
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="mydegree.html">My Degree</a></li>
+            <li><a href="javascript.html">JS Examples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </nav>
+    <div class="graphs">
+        <table>
+            <tr>
+                <th> </th>
+                <th>Studying</th>
+                <th>Playing Games</th>
+                <th>Exercise</th>
+            </tr>
+            <tr>
+                <td class="day">Monday</td>
+                <td>9h</td>
+                <td>2h</td>
+                <td>0h</td>
+            </tr>
+            <tr>
+                <td class="day">Tuesday</td>
+                <td>7h</td>
+                <td>1h</td>
+                <td>0h</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday</td>
+                <td>10h</td>
+                <td>2h</td>
+                <td>1h</td>
+            </tr>
+            <tr>
+                <td class="day">Thursday</td>
+                <td>8h</td>
+                <td>2h</td>
+                <td>0h</td>
+            </tr>
+            <tr>
+                <td class="day">Friday</td>
+                <td>4h</td>
+                <td>0h</td>
+                <td>1h</td>
+            </tr>
+            <tr>
+                <td class="day">Saturday</td>
+                <td>5h</td>
+                <td>1h</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <td class="day">Sunday</td>
+                <td>5h</td>
+                <td>1h</td>
+                <td>1h</td>
+            </tr>
+            
+        </table> 
+
+        <div class="canvasbtns">
+            <canvas id="canvasGraphs" width="1300" height="650"></canvas>
+            <div class="allbtns">
+                <div class="graphbtns">
+                    <button id="barchartbtn">Bar Chart</button>
+                    <button id="linechartbtn">Line Chart</button>
+                    <button id="piechartbtn">Pie Chart</button>
+                </div>
+
+                <div class="colorbtns">
+                    <button id="maincolorbtn">Change Color</button>
+                    <button id="subcolorbtn1">Change Color</button>
+                    <button id="subcolorbtn2">Change Color</button>
+                </div>
+            </div>
+            <script src="../JavaScript/canvas.js"></script>
+        </div>
+
+        <div class="canvas-btns-mobile">
+            <canvas id="canvas-graphs-mobile" width="340" height="170"></canvas>
+            <div class="allbtns-mobile">
+                <div class="graphbtns-mobile">
+                    <button id="barchartbtn-mobile">Bar Chart</button>
+                    <button id="linechartbtn-mobile">Line Chart</button>
+                    <button id="piechartbtn-mobile">Pie Chart</button>
+                </div>
+
+                <div class="colorbtns-mobile">
+                    <button id="maincolorbtn-mobile">Change Color</button>
+                    <button id="subcolorbtn1-mobile">Change Color</button>
+                    <button id="subcolorbtn2-mobile">Change Color</button>
+                </div>
+            </div>
+            <script src="../JavaScript/canvasmobile.js"></script>
+        </div>
+
+    </div>
+    <nav class="javascriptnav">
+        <ul>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="datavisualization.html">Daily Markus</a></li>
+        </ul>
+    </nav>
+</body>
+
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Markus Teimann">
+    <meta name="description" content="Web site for COM1008">
+    <title>Markus Teimann Website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../stylesheets/mobile.css">
+    <link rel="stylesheet" href="../stylesheets/smallphones.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" href="../stylesheets/desktopstylesheet.css" media="screen and (min-width: 768px)">
+    
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <div id="pageText">
+            Quiz
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="mydegree.html">My Degree</a></li>
+            <li><a href="javascript.html">JS Examples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </nav>
+    <div class="questions">
+        <h1>Question 1</h1>
+        <h2>What is the correct answer to the equation on the picture?</h2>
+        <div class="text_img">
+            <div class="firstquestion">
+                <div class="buttons">
+                    <button id="correctButton" onclick="getID(this.id)">All students who are wearing deeley boppers and voted for Markus to be Departmental Councillor are rocking the student Union</button>
+                    <button id="inCorrectButton" onclick="getID(this.id)">All students are wearing deeley boppers and all voted for Markus to be Departmental Councillor and all are rocking the student Union</button>
+                    <button id="inCorrectButton1" onclick="getID(this.id)">All students wear Deely Boppers and all students who voted for Markus to be Departmental Councillor are rocking the student Unionbmit</button>
+                </div>
+                    <div class="moduleimages">
+                        <img src="../Images/com1002ex.jpg" alt="It has the equation : ∀x[D(x) ∧ VC(x, Markus) → RSU(x)]">
+                    </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="questions">
+        <h1>Question 2</h1>
+        <h2>Who is the real mascot of Computer Science?</h2>
+        <div class="text_img">
+            <div class="buttons">
+                <button id="inCorrectButton2" onclick="getID(this.id)">Rory</button>
+                <button id="correctButton1" onclick="getID(this.id)">Wumpus</button>
+                <button id="inCorrectButton3" onclick="getID(this.id)">Alan Turing</button>
+            </div>
+                <div class="moduleimages">
+                    <img src="../Images/wumpus.jpg" alt="It has the equation : ∀x[D(x) ∧ VC(x, Markus) → RSU(x)]">
+                </div>
+        </div>  
+    </div>
+
+    <div class="questions">
+        <h1>Question 3</h1>
+        <h2>What is the building pictured?</h2>
+        <div class="text_img">
+            <div class="buttons">
+                <button id="correctButton2" onclick="getID(this.id)">The Diamond</button>
+                <button id="inCorrectButton4" onclick="getID(this.id)">Students Union</button>
+                <button id="inCorrectButton5" onclick="getID(this.id)">Paul's van</button>
+            </div>
+                <div class="moduleimages">
+                    <img src="../Images/thediamond.jpg" alt="It has the equation : ∀x[D(x) ∧ VC(x, Markus) → RSU(x)]">
+                </div>
+        </div>  
+    </div>
+    <script src="../JavaScript/quiz.js"></script>
+    <nav class="javascriptnav">
+        <ul>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="datavisualization.html">Daily Markus</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

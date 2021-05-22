@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Markus Teimann">
+    <meta name="description" content="Web site for COM1008">
+    <title>Markus Teimann Website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../stylesheets/mobile.css">
+    <link rel="stylesheet" href="../stylesheets/smallphones.css" media="screen and (max-width: 400px)">
+    <link rel="stylesheet" href="../stylesheets/desktopstylesheet.css" media="screen and (min-width: 768px)">
+    
+
+</head>
+
+
+<body>
+    <header>
+        <div id="pageText">
+            Contact
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="mydegree.html">My Degree</a></li>
+            <li><a href="javascript.html">JS Examples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </nav>
+    
+    <div class="contactmain">
+        <div class="contactinfo">
+            <h1>If you would want to contact me, you can do so using the form! I will get back to every email!</h1>
+            <h2>Markus Teimann</h2>
+            <h2>University of Sheffield</h2>
+            <h2>The University of Sheffield, 211 Portobello, Sheffield City Centre, Sheffield S1 4DP, United Kingdom</h2>
+            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="markus-teimann-ab174b1b9"><a class="LI-simple-link" href='https://uk.linkedin.com/in/markus-teimann-ab174b1b9?trk=profile-badge'>Markus Teimann</a></div>        </div>
+        <form name="myform" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="POST">  
+            <input type="hidden" name="recipients" value="mteimann1@sheffield.ac.uk">
+            <div class="senderemail">
+                <div class="emailpart">
+                    <div id="getemail">
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email" placeholder="type your email..." maxlength="40" size="12" required>
+                    </div>
+                    <div id="getname">
+                        <label for="from">Your name:</label>
+                        <input type="text" name="from" id="from" placeholder="type your name..." maxlength="40" size="12">
+                    </div>
+                </div>
+                <div class="textandsubmit">
+                    <textarea name="comments" rows="5" cols="40" placeholder="Type your message here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

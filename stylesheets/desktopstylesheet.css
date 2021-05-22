@@ -1,0 +1,587 @@
+/* Author of the code - Markus Teimann */
+
+#pageText{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+body {
+    background: rgb(129,129,117);
+    background: linear-gradient(90deg, rgba(129,129,117,1) 0%, rgba(170,169,157,1) 100%);
+    background-size: cover;
+    margin: 2em auto;
+    width: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body img{
+    max-width: 100%;
+}
+
+
+
+header{
+    background-image: url("../Images/tarquinius-priscus-entering-rome.jpg");
+    padding: 3%;
+    color: white;
+    font-size: 50px;
+    white-space: nowrap;
+    margin: 1% 0.8%;
+}
+
+
+/* menu navigation*/
+
+nav ul{
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    
+} 
+
+nav a{
+    display: inline-block;
+    color: black;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-weight: bolder;
+    border-bottom: white 2px solid;
+    text-align: center;
+}
+
+nav a:hover {
+    border-bottom: 1px solid ;
+    transition: border-bottom-color 1000ms ease 50ms;
+
+}
+
+/* blurs other menu items out */
+nav ul:hover li a {
+    transform: scale(1);
+    opacity: 0.2;
+    filter: blur(1px);
+}
+
+nav ul li a:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+/* dropdown menu */
+nav li:hover .submenu  > li{
+    display: inline-block;
+    position: relative;
+}
+
+.submenu li{
+    display: none;
+    position: absolute;
+}
+
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* Image and description on main page*/
+
+.images img{
+    width: 20em;
+    height: auto;
+    padding-left: 1.2em;
+    
+}
+
+
+.desc{
+    text-align: center;
+    margin: 0% 0%;
+    padding-bottom: 6%;
+    
+}
+
+#introtext{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 2%;
+}
+
+
+.desc_intro{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin-top: 6%;
+    background-image: linear-gradient(175deg, #1f405f 50%, #F4F4F4 calc(50% + 2px)) ;
+    border-style: solid;
+   
+}
+
+.aboutmarkus{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin-top: 6%;
+    background-image: linear-gradient(175deg, #1f405f 50%, #F4F4F4 calc(50% + 2px)) ;
+    border-style: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.aboutmarkus h3{
+    color: grey;
+    font: bold;
+}
+
+.aboutmarkus img{
+    width: 24em;
+    
+}
+
+.aboutpic{
+    display: inline;
+    flex-direction: row;
+}
+
+.aboutpic img{
+    width: 20em;
+    
+}
+
+
+/*images on the main page*/
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.texttags{
+
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2%;
+}
+
+
+
+/* my degree page */
+/* intro text */
+
+.mydegreeintro {
+    margin: 4% 0 0 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mydegree_text{
+    padding: 3%;
+    font-size: 1.5em;
+    line-height: 2em;
+    border-style: solid;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mydegreeintro h1{
+    font-size: 3em;
+    margin: 5% 0 2% 3%;
+
+}
+/* nav on mydegree */
+
+
+
+#degreenav{
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+/* the module and whole degree description */
+/* both divs */
+.degreeoverview{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ; /* i found a solution on stackoverflow that said to add 2px so the line becomes straight */
+    margin-top: 4%;                                                                       /*  without any major bumps that would come without it */
+    border-style: solid;
+}
+
+.degreeoverview p{
+    font-size: 1.5em;
+    margin: 3% 0 0 4%;
+}
+
+.degreeoverview h1{
+    padding-top: 5%;
+}
+
+.degreeoverview h2, .degreeoverview p{
+    font: bold;
+}
+
+.degreeoverview h1, .degreeoverview h2, .greypar{
+    color: grey;
+}
+
+.wholedegreeintro, .whysheffield{
+    padding: 5%;
+
+}
+
+/* just the description of my degree */
+.degreeoverview ol{
+    margin: 0 0 1% 2%;
+    padding-top: 3%;
+    padding-left: 4%;
+    font-size: 1.5em;
+}
+
+
+.wholedegreeintro h2{
+    padding: 5% 0 0 4%;
+}
+
+/* Why I chose Sheffield part */
+
+.whysheffield ul{
+    padding: 1%;
+    
+}
+
+.whysheffield h1{
+    font-size: 1.5em;
+}
+
+/* module pages */
+
+.wholemodule{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ;
+    padding: 4%;
+    margin-top: 5%;
+    border-style: solid;
+}
+
+.wholemodule img{
+    width: 100%;
+    padding: 0 5% 3% 5%;
+    height: auto;
+}
+
+.wholemodule h1{
+    color: grey;
+    padding-bottom: 2%;
+}
+
+.wholemodule p{
+    font-size: 1.3em;
+    width: 100%;
+    
+}
+
+.wholemodule .text_img{
+    display: flex;
+    flex-direction: row;
+}
+
+#crest{
+    margin-top: 2em;
+    float: left;
+    width: 200px;
+}
+
+/* JavaScript Example page */
+.javascript{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    padding: 2%;
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ;
+    border-style: solid;
+    font-size: 1.5em;
+}
+
+
+/* contact page */
+
+.contactmain{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ;
+    border-style: solid;
+}
+
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 4% 4% 4%;
+    width: 50%;
+}
+
+.contactmain h1{
+    padding: 3% 0;
+    color: grey;
+    font-size: 2em;
+}
+form{
+    margin: 4%;
+    align-self: start;
+}
+
+/*email form */
+
+form{
+    padding: 3%;
+    border-style: solid;
+    background: #048fc5
+}
+
+.contactinfo h2{
+    font-size: 1em;
+}
+
+.senderemail label{
+    padding-right: 3%;
+}
+
+.emailpart{
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+.emailpart input{
+    border-style: double;
+}
+
+#getemail, #getname{
+    padding: 2% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.textandsubmit{
+    display: flex;
+    flex-direction: column;
+}
+/* button */
+.textandsubmit button{
+    background:  #aa8b3e;
+    border: 1px solid #d6bb78;
+    color: white;
+    padding: 2.5% 6%;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.7s;
+}
+
+.textandsubmit button:hover{
+    color: #008cc9;
+    background-color: white;
+}
+/* LinkedIn badge */
+.LI-profile-badge{
+    padding-top: 4%;
+   
+}
+
+/* Quiz */
+
+.question h2{
+    margin-top: 2%;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ;
+    padding: 4%;
+    margin-top: 5%;
+    border-style: solid;
+}
+
+.questions img{
+    width: 100%;
+    height: auto;
+    margin: 0 10% 0 5%;
+    box-shadow: 5px 5px 3px 1px #999
+}
+
+.questions h1, .questions h2{
+    color: grey;
+    padding-bottom: 2%;
+}
+
+.firstquestion{
+    display: flex;
+    flex-direction: row;
+}
+
+/* buttons */
+.questions button{
+    
+    width: 100%;
+    background:  #008cc9;
+    border: 1px solid #008cc9;
+    color: white;
+    padding: 2% 0%;
+    margin-top: 2%;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.7s;
+    border-radius: 25px;
+}
+
+#correctButton, #inCorrectButton, #inCorrectButton1{
+    font-size: 1.2em;
+}
+
+.questions button:hover{
+    color: #008cc9;
+    background-color: white;
+}
+
+.questions .text_img{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Canvas page */
+
+/*Data Table */
+.graphs{   
+    background-image: linear-gradient(175deg, #1f405f 70%, #F4F4F4 calc(70% + 2px)) ;
+    margin-top: 4%;
+    border-style: solid;
+}
+
+table{
+    width: 450px;
+    margin: 4%;
+    background-color: white;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    background-color: grey;
+}
+.day{
+    text-align: left;
+}
+
+table, th, td{
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+/* Canvas and graphs */
+
+.canvas-btns-mobile{
+    display: none;
+}
+
+canvas{
+    outline: black 3px solid;
+    margin: 3%;
+    background-color: white;
+
+}
+.canvasbtns{
+    display: flex;
+    flex-direction: row;
+}
+
+/* buttons next to the canvas */
+.allbtns{
+    display: inline;
+}
+
+.colorbtns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80%;
+
+}
+
+#maincolorbtn{
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,1) 4%, rgba(255,0,0,1) 50%, rgba(0,128,0,1) 96%);
+    color: white;
+    padding: 5% 0%;
+    margin-top: 20%;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    white-space: nowrap;
+}
+
+#subcolorbtn1{
+    background: rgb(239,203,104);
+    background: linear-gradient(90deg, rgba(239,203,104,1) 4%, rgba(79,134,198,1) 50%, rgba(116,79,198,1) 96%);
+    color: white;
+    padding: 5% 0%;
+    margin-top: 20%;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    white-space: nowrap;
+}
+
+#subcolorbtn2{
+    background: rgb(0,78,100);
+    background: linear-gradient(90deg, rgba(0,78,100,1) 3%, rgba(219,41,85,1) 50%, rgba(188,158,193,1) 98%);
+    color: white;
+    padding: 5% 0%;
+    margin: 20% 0 50% 0  ;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    white-space: nowrap;
+}
+
+.graphbtns {
+    display: flex;
+    flex-direction: column;
+    margin: 40% 0;
+    
+}
+
+.graphbtns button{
+    background: rgb(239,203,104);
+    background: linear-gradient(90deg, rgba(239,203,104,1) 8%, rgba(216,30,91,1) 50%, rgba(116,79,198,1) 96%);
+    color: white;
+    padding: 5% 0%;
+    margin-top: 20%;
+    font-size: 22px;
+    
+    white-space: nowrap;
+}
+
+/* Accessibility page */
+
+.statement{
+    border-style: solid;
+    background-image: linear-gradient(175deg, #1f405f 85%, #F4F4F4 calc(85% + 2px)) ;
+    margin-top: 4%;
+    padding: 3%;
+    font-size: 1.5em;
+}
